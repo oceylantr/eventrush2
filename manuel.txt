@@ -1,0 +1,124 @@
+1.	Ubuntu kurulum
+2.	Terminal to desktop
+3.	Text entry
+4.	NOT TT Group
+5.	https://github.com/TT-Open-Labs/egitim/blob/master/manual.txt
+6.	Aşağıdaki komutları çalıştır
+
+sudo apt-get update
+
+wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+
+sudo dpkg -i packages-microsoft-prod.deb
+
+sudo apt-get install apt-transport-https
+
+sudo apt-get update
+
+sudo apt-get install dotnet-sdk-2.2
+
+sudo apt install curl
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+sudo apt-get update
+
+sudo apt-get install code # or code-insiders
+
+7.	Terminalde cd /home, sonrasındaki ana kullanıcı dizini ismine ilerle [kullanıcı_adı]
+8.	Örn: cd /oguzhan
+9.	sudo code --user-data-dir=\home\oguzhan
+10.	Code extensions bölümünde c#, docker, Dotnet Core Essentials pluginlerini kuralım
+11.	Aşağıdaki komutları çalıştır
+
+mkdir calisma
+cd calisma
+sudo apt-get install git
+sudo git clone https://github.com/oceylantr/eventrush.git
+cd eventrush
+
+12.	Code içinde eventrush dizinini OpenFolder ilea ç
+13.	Code un sağ alt köşesinde çıkan Resolve Dependencies e Ok demelisin
+14.	F1 basıp, DCE Build seçilir, gelen listed eventrush.csproj seçilir
+15.	Debug -> Start Without Debugging
+16.	Tarayıcıda localhost:5001 e girildiğinde boş sayfa geliyor ve Code içindeki konsolda Request finished leri görüyorsak ok
+17.	Aşağıdaki komutları çalıştır
+
+sudo apt install docker.io
+sudo docker run -d --hostname my-rabbit --name some-rabbit rabbitmq:3-management
+sudo docker inspect some-rabbit
+
+18.	Son docker inspect komutunda gelen cevapta son satırlardaki IPAddress in karşısındaki muhtemel 172 li adres kopyalanır -> [local_rabbitmq_ip]
+19.	Tarayıcı da [local_rabbitmq_ip]:15672 adresi açılır
+20.	guest guest ile girilir
+21.	Queues tabında Add a new queue diyerek aşağıdaki Queue lar Type:Classic, Durabilitiy:Transient seçilerek eklenir (ard arda eklerken Durability yi Transient olarak tekrar tekrar seçmeyi unutma):
+
+UcusAyarlandiEvent
+OdemeBasariliOlduEvent
+OdemeHatasiOlustuEvent
+AracTalepEdildiEvent
+AracAyarlandiEvent
+KonaklamaTalepEdildiEvent
+KonakAyarlandiEvent
+
+22.	 Exchange tabında Add a new exchange diyerek yeni bir Exchange Fanout-Transient olarak eklenir, ismi: odeme.exchange
+23.	 Exchange listesinde odeme.exchange e girilir, binding ler aşağıdaki gibi eklenir:
+
+Queue adı: AracTalepEdildiEvent - Routing key: Arac
+Queue adı: KonaklamaTalepEdildiEvent - Routing key: Konak
+
+24.  aşağıdaki komutu çalıştır
+
+sudo apt-get install mongodb
+mongo
+
+25.	 Mongo konsolunda aşağıdakilerini çalıştır
+
+db.createCollection('Ucus')
+db.Ucus.insertMany([{'Name':'Ali Taş','UcusSaati':'08:00','KalkisYeri':'TZW','VarisYeri':'HTR'}, {'Name':'Kaya Kuş','UcusSaati':'12:00','KalkisYeri':'ATA','VarisYeri':'IZM'}, {'Name':'Ahmet Daş','UcusSaati':'18:00','KalkisYeri':'SBH','VarisYeri':'PAR'}])
+db.Ucus.insert([{'Name':'Ali Taş','UcusSaati':'08:00','KalkisYeri':'TZW','VarisYeri':'HTR'}])
+db.Ucus.insert([{'Name':'Kaya Kuş','UcusSaati':'12:00','KalkisYeri':'ATA','VarisYeri':'IZM'}])
+db.Ucus.insert([{'Name':'Ahmet Daş','UcusSaati':'17:00','KalkisYeri':'SBH','VarisYeri':'PAR'}])
+db.Ucus.find({}).pretty()
+
+26.  Code programında Ucus.csproj sag tikla -> DCE Add Nuget Package -> gelen alana MongoDB.Driver enter
+
+27.  Code içindeki terminalde Ucus/Ucus içine girip dotnet publish / dotnet run
+
+28.  tarayıcıdan https://localhost:5001/api/ucus geliyor mu?
+
+29.  mongo konsolunda aşağıdakileri çalıştır:
+
+use OdemeDB
+use AdminDB
+db.Konfigs.insert([{'Subscriber':'Odeme','PublishQueue':'UcusAyarlandiEvent'}])
+db.Konfigs.insert([{'Subscriber':'Arac','PublishQueue':'OdemeBasariliOlduEvent'}])
+db.Konfigs.insert([{'Subscriber':'Konak','PublishQueue':'OdemeBasariliOlduEvent'}])
+db.Konfigs.find({}).pretty()
+
+30.  yeni 4 terminal açıp 4 projenin son dizinine girip sırayla çalıştırın
+sudo dotnet build
+sudo dotnet run
+
+31.  subscription için bir kere aşağıdakileri çalıştır, mecbur:
+
+https://localhost:5001/api/ucus
+https://localhost:6001/api/odeme
+https://localhost:7001/api/arac
+https://localhost:8001/api/konak
+
+32.  örnek tetik kaydı için
+sudo curl -X POST https://localhost:5001/api/ucus -H "Content-Type: application/json" -d '{"MusteriAdSoyad":"Oguzhan Ceylan", "UcusSaati":"12:00", "KalkisYeri":"ISP", "VarisYeri":"IST", "OdemeTutari":"3030"}' --insecure
+
+33.  kayıtları hem buradan kontrol et:
+https://localhost:5001/api/ucus
+https://localhost:6001/api/odeme
+https://localhost:7001/api/arac
+https://localhost:8001/api/konak
+
+34. hem de buradan kontrol et:
+Rabbit konsolunda Queues tabında...
