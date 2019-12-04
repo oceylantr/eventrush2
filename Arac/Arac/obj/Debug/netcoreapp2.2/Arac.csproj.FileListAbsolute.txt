@@ -1,0 +1,14 @@
+/home/sopho/newwork/Arac/Arac/bin/Debug/netcoreapp2.2/Arac.deps.json
+/home/sopho/newwork/Arac/Arac/bin/Debug/netcoreapp2.2/Arac.runtimeconfig.json
+/home/sopho/newwork/Arac/Arac/bin/Debug/netcoreapp2.2/Arac.runtimeconfig.dev.json
+/home/sopho/newwork/Arac/Arac/bin/Debug/netcoreapp2.2/Arac.dll
+/home/sopho/newwork/Arac/Arac/bin/Debug/netcoreapp2.2/Arac.pdb
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.csprojAssemblyReference.cache
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.csproj.CoreCompileInputs.cache
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.RazorAssemblyInfo.cache
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.RazorAssemblyInfo.cs
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.AssemblyInfoInputs.cache
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.AssemblyInfo.cs
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.RazorTargetAssemblyInfo.cache
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.dll
+/home/sopho/newwork/Arac/Arac/obj/Debug/netcoreapp2.2/Arac.pdb

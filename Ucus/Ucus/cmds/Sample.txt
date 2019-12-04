@@ -1,0 +1,1 @@
+curl -X POST https://localhost:5001/api/ucus -H "Content-Type: application/json" -d '{"MusteriAdSoyad":"Oguzhan Ceylan", "UcusSaati":"12:00", "KalkisYeri":"ISP", "VarisYeri":"IST"}' --insecure

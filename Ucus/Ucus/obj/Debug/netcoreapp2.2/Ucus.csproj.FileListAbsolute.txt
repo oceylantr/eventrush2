@@ -1,0 +1,14 @@
+/home/sopho/newwork/Ucus/Ucus/bin/Debug/netcoreapp2.2/Ucus.deps.json
+/home/sopho/newwork/Ucus/Ucus/bin/Debug/netcoreapp2.2/Ucus.runtimeconfig.json
+/home/sopho/newwork/Ucus/Ucus/bin/Debug/netcoreapp2.2/Ucus.runtimeconfig.dev.json
+/home/sopho/newwork/Ucus/Ucus/bin/Debug/netcoreapp2.2/Ucus.dll
+/home/sopho/newwork/Ucus/Ucus/bin/Debug/netcoreapp2.2/Ucus.pdb
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.csprojAssemblyReference.cache
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.csproj.CoreCompileInputs.cache
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.RazorAssemblyInfo.cache
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.RazorAssemblyInfo.cs
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.AssemblyInfoInputs.cache
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.AssemblyInfo.cs
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.RazorTargetAssemblyInfo.cache
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.dll
+/home/sopho/newwork/Ucus/Ucus/obj/Debug/netcoreapp2.2/Ucus.pdb

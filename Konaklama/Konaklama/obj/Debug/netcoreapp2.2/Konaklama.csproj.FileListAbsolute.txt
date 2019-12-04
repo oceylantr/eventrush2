@@ -1,0 +1,14 @@
+/home/sopho/newwork/Konaklama/Konaklama/bin/Debug/netcoreapp2.2/Konaklama.deps.json
+/home/sopho/newwork/Konaklama/Konaklama/bin/Debug/netcoreapp2.2/Konaklama.runtimeconfig.json
+/home/sopho/newwork/Konaklama/Konaklama/bin/Debug/netcoreapp2.2/Konaklama.runtimeconfig.dev.json
+/home/sopho/newwork/Konaklama/Konaklama/bin/Debug/netcoreapp2.2/Konaklama.dll
+/home/sopho/newwork/Konaklama/Konaklama/bin/Debug/netcoreapp2.2/Konaklama.pdb
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.csprojAssemblyReference.cache
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.csproj.CoreCompileInputs.cache
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.RazorAssemblyInfo.cache
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.RazorAssemblyInfo.cs
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.AssemblyInfoInputs.cache
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.AssemblyInfo.cs
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.RazorTargetAssemblyInfo.cache
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.dll
+/home/sopho/newwork/Konaklama/Konaklama/obj/Debug/netcoreapp2.2/Konaklama.pdb

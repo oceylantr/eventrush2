@@ -1,0 +1,14 @@
+/home/sopho/newwork/Odeme/Odeme/bin/Debug/netcoreapp2.2/Odeme.deps.json
+/home/sopho/newwork/Odeme/Odeme/bin/Debug/netcoreapp2.2/Odeme.runtimeconfig.json
+/home/sopho/newwork/Odeme/Odeme/bin/Debug/netcoreapp2.2/Odeme.runtimeconfig.dev.json
+/home/sopho/newwork/Odeme/Odeme/bin/Debug/netcoreapp2.2/Odeme.dll
+/home/sopho/newwork/Odeme/Odeme/bin/Debug/netcoreapp2.2/Odeme.pdb
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.csprojAssemblyReference.cache
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.csproj.CoreCompileInputs.cache
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.RazorAssemblyInfo.cache
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.RazorAssemblyInfo.cs
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.AssemblyInfoInputs.cache
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.AssemblyInfo.cs
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.RazorTargetAssemblyInfo.cache
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.dll
+/home/sopho/newwork/Odeme/Odeme/obj/Debug/netcoreapp2.2/Odeme.pdb
