@@ -38,7 +38,7 @@ sudo apt-get install code # or code-insiders
 mkdir calisma
 cd calisma
 sudo apt-get install git
-sudo git clone https://github.com/oceylantr/eventrush.git
+sudo git clone https://github.com/oceylantr/eventrush2.git
 cd eventrush
 
 12.	Code içinde eventrush dizinini OpenFolder ilea ç
