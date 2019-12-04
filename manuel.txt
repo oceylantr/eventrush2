@@ -41,7 +41,7 @@ sudo apt-get install git
 sudo git clone https://github.com/oceylantr/eventrush2.git
 cd eventrush2
 
-12.	Code içinde eventrush dizinini OpenFolder ilea ç
+12.	Code içinde eventrush2 dizinini OpenFolder ile aç
 13.	Code un sağ alt köşesinde çıkan Resolve Dependencies e Ok demelisin
 ....
 17.	Aşağıdaki komutları çalıştır
