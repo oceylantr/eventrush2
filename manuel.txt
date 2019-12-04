@@ -43,9 +43,7 @@ cd eventrush
 
 12.	Code içinde eventrush dizinini OpenFolder ilea ç
 13.	Code un sağ alt köşesinde çıkan Resolve Dependencies e Ok demelisin
-14.	F1 basıp, DCE Build seçilir, gelen listed eventrush.csproj seçilir
-15.	Debug -> Start Without Debugging
-16.	Tarayıcıda localhost:5001 e girildiğinde boş sayfa geliyor ve Code içindeki konsolda Request finished leri görüyorsak ok
+....
 17.	Aşağıdaki komutları çalıştır
 
 sudo apt install docker.io
